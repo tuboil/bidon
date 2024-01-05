@@ -1,0 +1,8 @@
+#mes commentaires
+commentaires.txt
+#doc
+*.pdf
+!besoins.pdf
+#repertoire bin
+/bin/*
+
