@@ -24,7 +24,6 @@ pipeline{
     post{
         failure{
             echo 'le pipeline est planté'
-            ech
         }
     }
 }
