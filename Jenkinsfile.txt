@@ -1,0 +1,30 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage('build'){
+            steps{
+                //ceci est un commentaire
+                echo 'je suis en train de faire le build'
+            }
+        }
+        stage('test'){
+            steps{
+                echo 'je suis en train de faire les tests'
+                error 'oupss'
+            }
+        }
+        stage('deploy'){
+            steps{
+                echo 'je suis en train de déployer'
+            }
+        }
+        
+    }
+    post{
+        failure{
+            echo 'le pipeline est planté'
+            ech
+        }
+    }
+}
